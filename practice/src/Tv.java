@@ -2,9 +2,20 @@ public class Tv {
     int channel = 1;
     int volume = 1;
     boolean TvOn = false;
+    int num = 1;
+    String s;
+    boolean x;
 
     public Tv() {
     };
+
+    Tv(String newS) {
+        s = newS;
+    }
+
+    public void print() {
+        System.out.println(s);
+    }
 
     public void turnOn() {
         TvOn = true;
