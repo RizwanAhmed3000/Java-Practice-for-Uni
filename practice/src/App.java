@@ -13,6 +13,7 @@ public class App {
         Tv1 = new Tv();
         Tv1.print();
         System.out.println(Tv1.x);
+        System.out.println(Tv1.s);
         // Tv1.turnOn();
         // Tv1.setChannel(21);
         // Tv1.setVol(30);
