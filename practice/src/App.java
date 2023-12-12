@@ -24,6 +24,9 @@ public class App {
         a[1] = temp;
     }
 
+    private static int i = 0;
+    private static int j = 0;
+
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
         // Tv Tv1;
@@ -71,12 +74,25 @@ public class App {
         // System.out.println("Count is: " + myCount.count);
         // System.out.println("time is: " + time);
 
-        int[] arry = { 2, 3 };
-        System.out.println("Arry before: " + arry[0] + " , " + arry[1]);
+        // int[] arry = { 2, 3 };
+        // System.out.println("Arry before: " + arry[0] + " , " + arry[1]);
         // swap(arry[0], arry[1]);
         // swap2(arry);
 
-        System.out.println("arry[0] = " + arry[0]);
-        System.out.println("arry[1] = " + arry[1]);
+        // System.out.println("arry[0] = " + arry[0]);
+        // System.out.println("arry[1] = " + arry[1]);
+
+        // -----------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-------------------------//
+
+        int i = 2;
+        int k = 3;
+        {
+            int j = 3;
+            System.out.println("i + j is " + i + j);
+        }
+
+        k = i + j;
+        System.out.println("k is " + k);
+        System.out.println("j is " + j);
     }
 }
