@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class App {
     static void myStaticClass() {
         System.out.println("this is static method" + "==>> static class");
@@ -84,15 +86,29 @@ public class App {
 
         // -----------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-------------------------//
 
-        int i = 2;
-        int k = 3;
-        {
-            int j = 3;
-            System.out.println("i + j is " + i + j);
-        }
+        // int i = 2;
+        // int k = 3;
+        // {
+        // int j = 3;
+        // System.out.println("i + j is " + i + j);
+        // }
 
-        k = i + j;
-        System.out.println("k is " + k);
-        System.out.println("j is " + j);
+        // k = i + j;
+        // System.out.println("k is " + k);
+        // System.out.println("j is " + j);
+
+        // ============================CLASS ABSTRACTION &
+        // ENCAPSULATION=====================//
+
+        Scanner input = new Scanner(System.in);
+
+        // System.out.print("");
+
+        // Loan loan1 = new Loan();
+        Loan loan1 = new Loan(8.5, 4, 120000.95);
+
+        System.out.printf("The loan was created on %s\n" + "The monthly payment is %.2f\nThe total payment is %.2f\n",
+                loan1.getLoanDate().toString(), loan1.getMonthlyPayment(), loan1.getTotalPayment());
+
     }
 }
