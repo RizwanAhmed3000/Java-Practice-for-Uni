@@ -63,4 +63,26 @@ public class Loan {
         double totalPayment = getMonthlyPayment() * numOfYear * 12;
         return totalPayment;
     }
+
+    // =================POLYMORPHISM(function overloading)======================//
+    /*
+     * fucntion with same name and same return type but using different types of
+     * parameters
+     * 
+     * same return type different parameters
+     * same parameters different return type
+     * same return type and same type parameters then different numbers of
+     * parameters
+     */
+    public void printInfo(int numOfYear) {
+        System.out.println(numOfYear);
+    }
+
+    public void printInfo(double loanAmount) {
+        System.out.println(loanAmount);
+    }
+
+    public void printInfo(double loanAmount, int numOfYear) {
+        System.out.println(loanAmount + " " + numOfYear);
+    }
 }

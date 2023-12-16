@@ -110,5 +110,8 @@ public class App {
         System.out.printf("The loan was created on %s\n" + "The monthly payment is %.2f\nThe total payment is %.2f\n",
                 loan1.getLoanDate().toString(), loan1.getMonthlyPayment(), loan1.getTotalPayment());
 
+        loan1.printInfo(120000.00);
+        loan1.printInfo(10);
+        loan1.printInfo(12000.55, 2);
     }
 }
