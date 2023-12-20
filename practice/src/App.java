@@ -100,18 +100,38 @@ public class App {
         // ============================CLASS ABSTRACTION &
         // ENCAPSULATION=====================//
 
-        Scanner input = new Scanner(System.in);
+        // Scanner input = new Scanner(System.in);
 
         // System.out.print("");
 
         // Loan loan1 = new Loan();
-        Loan loan1 = new Loan(8.5, 4, 120000.95);
+        // Loan loan1 = new Loan(8.5, 4, 120000.95);
 
-        System.out.printf("The loan was created on %s\n" + "The monthly payment is %.2f\nThe total payment is %.2f\n",
-                loan1.getLoanDate().toString(), loan1.getMonthlyPayment(), loan1.getTotalPayment());
+        // System.out.printf("The loan was created on %s\n" + "The monthly payment is
+        // %.2f\nThe total payment is %.2f\n",
+        // loan1.getLoanDate().toString(), loan1.getMonthlyPayment(),
+        // loan1.getTotalPayment());
 
-        loan1.printInfo(120000.00);
-        loan1.printInfo(10);
-        loan1.printInfo(12000.55, 2);
+        // loan1.printInfo(120000.00);
+        // loan1.printInfo(10);
+        // loan1.printInfo(12000.55, 2);
+
+        Course course1 = new Course("OOP");
+        Course course2 = new Course("DSA");
+
+        course1.addStudent("Rizwan Ahmed");
+        course1.addStudent("Ahmed");
+        course1.addStudent("Hasan");
+        course2.addStudent("Bilal");
+        course2.addStudent("Kamran");
+
+        String courseName = course1.getCourseName();
+        String[] students = course1.getStudents();
+
+        System.out.println(courseName);
+
+        System.out.println("Number of students in " + course1.getCourseName() + " are " + course1.getNumberOfStudents());
+        System.out.println("Number of students in " + course2.getCourseName() + " are " + course2.getNumberOfStudents());
+        // System.out.println(students[0]);
     }
 }
