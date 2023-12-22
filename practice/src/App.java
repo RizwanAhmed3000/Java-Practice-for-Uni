@@ -116,22 +116,29 @@ public class App {
         // loan1.printInfo(10);
         // loan1.printInfo(12000.55, 2);
 
-        Course course1 = new Course("OOP");
-        Course course2 = new Course("DSA");
+            //=======================POLYMORPHISM====================//
+        // Course course1 = new Course("OOP");
+        // Course course2 = new Course("DSA");
 
-        course1.addStudent("Rizwan Ahmed");
-        course1.addStudent("Ahmed");
-        course1.addStudent("Hasan");
-        course2.addStudent("Bilal");
-        course2.addStudent("Kamran");
+        // course1.addStudent("Rizwan Ahmed");
+        // course1.addStudent("Ahmed");
+        // course1.addStudent("Hasan");
+        // course2.addStudent("Bilal");
+        // course2.addStudent("Kamran");
 
-        String courseName = course1.getCourseName();
-        String[] students = course1.getStudents();
+        // String courseName = course1.getCourseName();
+        // String[] students = course1.getStudents();
 
-        System.out.println(courseName);
+        // System.out.println(courseName);
 
-        System.out.println("Number of students in " + course1.getCourseName() + " are " + course1.getNumberOfStudents());
-        System.out.println("Number of students in " + course2.getCourseName() + " are " + course2.getNumberOfStudents());
+        // System.out.println("Number of students in " + course1.getCourseName() + " are " + course1.getNumberOfStudents());
+        // System.out.println("Number of students in " + course2.getCourseName() + " are " + course2.getNumberOfStudents());
         // System.out.println(students[0]);
+
+        // =========================INHERITENCE====================//
+
+        
     }
 }
+
+
